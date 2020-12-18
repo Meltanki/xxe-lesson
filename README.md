@@ -13,11 +13,11 @@ eXtensible Markup Language (XML): a language simitlar to HTML that was designed 
 Document Type Definition (DTD): an agreed upon structure of what is expected in an XML document.  This document can be defined internally or externally. (We will see later why allowing external definitions of the DTD can lead to the XXE vulnerability).  
 
 ## Testing the App
-Clone the repo to your local directory.
+Clone the repo to your local system.
 ```
 git clone https://github.com/Meltanki/xxe-lesson.git
 ```
-Install the necessary requirements to fun the application.  
+Install the necessary requirements to run the application.  
 ```
 pip install -r requirements.txt
 ```

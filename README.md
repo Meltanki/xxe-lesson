@@ -43,7 +43,7 @@ These lines introduce a new ```DOCTYPE``` element that defines an external entit
 ```
 <title>&xxe;</title>
 ```
-In the running application, upload the 'attack.xml' file and click the 'Process XML' button.  You should see the contents of the 'secrets.txt' file show in the list in the bottom of the screen. The 'secrets.txt' file is an example filled with dummy data.  This example is meant to show that the contents of any file on they system can be dumped to the screen. 
+In the running application, upload the 'attack.xml' file and click the 'Process XML' button.  You should see the contents of the 'secrets.txt' file display in the list in the bottom of the screen. The 'secrets.txt' file is an example filled with dummy data.  This example is meant to show that the contents of any file from the system can be dumped to the screen. 
 
 ## Mitigation
 In order to help mitigate XXE injection the XML processor should be configured to use a local static DTD and disallow any declared DTD in the XML document.  In our specific application, we use the ```lxml``` library to parse XML.  This library allows the addition of external entities, but other libraries (such as ```etree``` or ```minidom```) will raise a ParseException with external entities.  Please review the the Python official documentation for further information on XML Processing Modules (https://docs.python.org/3/library/xml.html#the-defusedxml-and-defusedexpat-packages)
